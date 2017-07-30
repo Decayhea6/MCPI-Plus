@@ -1,4 +1,3 @@
-# MCPI-Plus
-A set of tools to add new or missing features to minecraft pi and improve your experience
+#Inventory+
 
-Change your branch to view all our diffrent projects
+An extended inventory for minecraft Pi
