@@ -1,0 +1,1 @@
+sudo python3 texture+.app.py

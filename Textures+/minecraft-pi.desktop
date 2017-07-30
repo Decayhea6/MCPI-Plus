@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Minecraft Pi
+Comment=Fun with Blocks
+TryExec=minecraft-pi
+Exec=./run.sh
+Icon=/home/pi/Documents/Python Projects/Minecraft_PI/Textures+/ICON.png
+Terminal=false
+Type=Application
+Categories=Application;Game;
+StartupNotify=true
+Name[en_GB]=Texture+
+Comment[en_GB]=Editor of textures mcpe
