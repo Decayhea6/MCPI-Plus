@@ -40,11 +40,15 @@ def defaultTex():
 def pastefile():
     print('Location is: ' + location)
     print('Destination is: ' + texdesin)
+    newpath = r'C:\Program Files\arbitrary' 
+    if not os.path.exists(texdesin):
+        os.makedirs(texdesin)
     #if os.path.isfile(texdesin):
     shutil.rmtree(texdesin)
     shutil.copytree(location, texdesin)
     #else:
         #shutil.copytree(location, texdesin)
+    print('finished')
     
 #########################################################################
     
