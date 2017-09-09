@@ -8,6 +8,8 @@ import os
 
 import shutil
 
+from subprocess import call
+
 global dir_path
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -24,7 +26,7 @@ global texdesin
 
 texdesin = '/opt/minecraft-pi/data/images'
 
-#########################################################################
+#########################/home/pi/Documents/Python/MCPI-Plus-Textures-/Textures+################################################
 
 def findTex():
     window.directory = filedialog.askdirectory()
@@ -46,8 +48,10 @@ def pastefile():
     #if os.path.isfile(texdesin):
     shutil.rmtree(texdesin)
     shutil.copytree(location, texdesin)
+    call(["sudo", "chown", "-R", "pi", "/opt/minecraft-pi/data/images"])
     #else:
         #shutil.copytree(location, texdesin)
+    
     print('finished')
     
 #########################################################################
